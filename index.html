@@ -9,16 +9,22 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
+
+    <!-- -----------HOME--------- -->
     <header class="header">
       <a href="#" class="logo">Portfolio</a>
 
-      <nav class="navbar">
-        <a href="#home" style="--i: 1" >Home</a>
-        <a href="#about" style="--i: 2">About Me</a>
-        <a href="#services" style="--i: 3">Services</a>
-        <a href="#skills" style="--i: 4">Skills</a>
-        <a href="#project" style="--i: 5">Projects</a>
-        <a href="#contact" style="--i: 6">Contact</a>
+      <nav class="navbar"> <ul id="side-menu">
+        <li><a href="#home" style="--i: 1" >Home</a></li>
+        <li><a href="#about" style="--i: 2">About Me</a></li>
+        <li><a href="#services" style="--i: 3">Services</a></li>
+        <li><a href="#skills" style="--i: 4">Skills</a></li>
+        <li><a href="#project" style="--i: 5">Projects</a></li>
+        <li><a href="#contact" style="--i: 6">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+     
+        <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
       </nav>
     </header>
     <section class="home " id="home">
@@ -41,6 +47,8 @@
         <img src="pic.png" alt="" />
       </div>
     </section>
+
+    <!-- -----------ABOUT ME--------- -->
 
     <section id="about">
       <div class="about-main">
@@ -73,14 +81,14 @@
           </div>
         </div>
         <div class="hobby">
-            <h2>HOBBY</h2>
+            <h2 class="title">HOBBY</h2>
              <li>Reading Novels</li>
             
             <li>Playing Sports</li>
             <li>Listening Music</li>
           </div>
-          <div class="strengths">
-            <h2>STRENGTHS</h2>
+          <div class="hobby">
+            <h2 class="title">STRENGTHS</h2>
              <li>Communication</li>
              <li>Perseverance</li>
             
@@ -91,6 +99,8 @@
     </div>
     </section>
 
+
+    <!-- -----------SERVICES--------- -->
 
     <section>
         <div class="services" id="services">
@@ -120,6 +130,8 @@
             </div>
         </div>
     </section>
+
+    <!-- -----------SKILLS--------- -->
 
 
     <h1 class="sub-title1 sub-title">My <span>Skills</span></h1>
@@ -232,6 +244,8 @@
 
     </section>
 
+    <!-- -----------PORTFOLIO--------- -->
+
     <section class="fourth">
       <div id="portfolio" id="project">
         <div class="main-text" id="project">
@@ -268,6 +282,8 @@
         </div>
       </div>
     </section>
+
+    <!-- -----------CONTACT--------- -->
 
     <section class="contact" id="contact">
       <div class="contact-text">

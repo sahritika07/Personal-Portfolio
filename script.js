@@ -5,3 +5,13 @@ var typed =new Typed (".text", {
     backDelay: 1000,
     loop: true
 })
+
+
+var sidemenu=document.getElementById("side-menu")
+
+function openmenu(){
+    sidemenu.style.right="0"
+}
+function closemenu(){
+    sidemenu.style.right="-180px"
+}

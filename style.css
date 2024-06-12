@@ -15,6 +15,9 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
+
+/* -----------HOME--------- */
+
 .header{
     position: fixed;
     top: 0;
@@ -39,7 +42,7 @@ body{
     animation: slideRight 1s ease forwards;
 }
 
-.navbar a{
+.navbar ul li{
     display: inline-block;
     font-size: 25px;
     color: #fff;
@@ -51,6 +54,10 @@ body{
     border-bottom: 3px solid transparent;
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
+}
+
+.navbar ul li a{
+    color: #fff;
 }
 
 .navbar a:hover,
@@ -160,10 +167,112 @@ body{
     margin-bottom: 10px;
 }
 
-/* About */
+.navbar .fa-solid{
+    display: none;
+}
+
+@media (width < 800px){
+
+    .navbar .fa-bars{
+        position: absolute;
+        right: 25px;
+        top: 15px;
+    }
+    
+    .navbar .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    .navbar ul {
+        background-color: #00ffe5;
+        position: fixed;
+        top: 0;
+        right: -180px;
+        width: 180px;
+        height: 100vh;
+        color: #000000;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    
+    }
+
+    .navbar ul li{
+        display: block;
+        margin: 20px;
+        color: #000000;
+    }
+
+    .navbar ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 22px;
+        cursor: pointer;
+    }
+
+    .navbar ul li a{
+        color: #000000;
+    }
+   
+}
+
+
+@media (width < 800px){
+
+    .header .logo{
+        font-size: 14px;
+    }
+    .header{
+        font-size: 20px;
+        display: block;
+        
+    }
+
+    .home-content .btn{
+        /* display: block;
+        height: 10px; */
+        padding: 5px;
+        /* width: 80px; */
+        font-size: 10px;
+    }
+
+    .home{
+        display: block;
+        font-size: 24px;
+    }
+
+    .home img{
+        height: 170px;
+        width: 170px;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+    .home-content h1{
+        font-size: 28px;
+    }
+    .home-content h3{
+        font-size: 22px;
+    }
+
+
+  
+}
+
+
+
+
+
+
+/* -----------ABOUT ME--------- */
+
+
 
 #about{
    height: 100%;
+   font-size: 30px;
+
 }
 
 .about-main{
@@ -207,6 +316,7 @@ body{
     text-decoration: underline;
     text-decoration-thickness: 5px;
     text-underline-offset: 10px;
+    font-size: 24px;
    
 }
 
@@ -226,7 +336,7 @@ body{
 }
 
 
-.hobby h2{
+.title{
     margin-top: 30px;
     margin-left: 80px;
     color: #00ffe5;
@@ -234,22 +344,10 @@ body{
     text-decoration-thickness: 5px;
     text-underline-offset: 10px;
     text-align: center;
+    font-size: 24px;
   
    
 }
-
-.strengths h2{
-    margin-top: 30px;
-    margin-left: 80px;
-    color: #00ffe5;
-    text-decoration: underline;
-    text-decoration-thickness: 5px;
-    text-underline-offset: 10px;
-    text-align: center;
-   
-}
-
-
 
 .hobby li{
     font-size: 22px;
@@ -268,7 +366,47 @@ body{
     /* list-style: none; */
 }
 
-/* 3 */
+
+@media (width < 800px){
+    .about{
+        margin-left: 30px;
+        margin-right: 20px;
+      }
+
+    .about-heading h1{
+        font-size: 26px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+    .hobby li{
+        font-size: 14px;
+    }
+
+    .education h2{
+        font-size: 16px;
+    }
+
+    .education h4{
+        font-size: 14px;
+    }
+
+    .about p{
+        font-size: 14px;
+    
+    }
+
+    .about-main{
+        height: 100%;
+        width: 100%;
+        margin-left: 0;
+        
+    }
+}
+
+
+/* -----------SERVICES---------*/
 
 
 .container{
@@ -298,11 +436,7 @@ body{
 
 .services-list h2{
     color: #00ffe5;
-
- 
 }
-
-
 
 .services-list{
     display: grid;
@@ -357,8 +491,6 @@ body{
     transform: translateY(-10px);
    
 }
-
-
 
 @keyframes slideRight{
     0%{
@@ -415,48 +547,7 @@ body{
     }
 }
 
-
-
-
-
-
-
-@media (width < 800px){
-    .header{
-        font-size: 20px;
-        display: block;
-    }
-
-    .home{
-        display: block;
-        font-size: 24px;
-    }
-
-    .home img{
-        height: 170px;
-        width: 170px;
-        margin-left: 50px;
-        margin-top: 50px;
-    }
-
-    .home-content h1{
-        font-size: 26px;
-    }
-    .home-content h3{
-        font-size: 22px;
-    }
-
-
-
-    /* 2 */
-
-  .about{
-    margin-left: 30px;
-    margin-right: 20px;
-  }
-}
-
-/* 4 */
+/* ---------SKILLS------- */
 
 
 
@@ -842,6 +933,16 @@ body{
 
 
 
+@media (width < 800px){
+    .portfolio-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(150px, 200px));
+        /* margin-left: px; */
+    }
+}
+
+
+
 .contact{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -918,7 +1019,7 @@ body{
     color: #00ffe5;
 }
 
-contact-form form{
+.contact-form form{
     position: relative;
 }
 
@@ -984,4 +1085,6 @@ contact-form form{
     background-color: #00ffe5;
     padding: 10px;
     border-radius: 0.5rem;
+
+ 
 }
