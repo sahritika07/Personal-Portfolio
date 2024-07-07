@@ -165,7 +165,7 @@ body{
     display: none;
 }
 
-@media (width < 800px){
+@media (width < 900px){
 
     .navbar .fa-bars{
         position: absolute;
@@ -212,7 +212,11 @@ body{
 }
 
 
-@media (width < 800px){
+@media (width < 900px){
+     
+    .home{
+        width: 100%;
+    }
 
     .header .logo{
         font-size: 16px;
@@ -257,6 +261,16 @@ body{
     }
 
 }
+
+
+@media (width < 900px){
+    .home{
+        width: 100%;
+    }
+
+}
+
+
 
 /* -----------ABOUT ME--------- */
 
@@ -360,7 +374,7 @@ body{
 }
 
 
-@media (width < 800px){
+@media (width < 900px){
     .about{
         margin-left: 30px;
         margin-right: 20px;
@@ -831,6 +845,15 @@ body{
 
 }
 
+@media (width < 900px){
+    .sub-title{
+        margin-top: -60px;
+    }
+}
+
+
+/* ---------PORTFOLIO------- */
+
 .fourth{
     height: 100vh;
 }
@@ -936,14 +959,20 @@ body{
 
 
 
-@media (width < 800px){
+@media (width < 900px){
     .portfolio-content{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(150px, 200px));
         /* margin-left: px; */
     }
+
+    .fourth{
+        margin-top: -100px;
+    }
 }
 
+
+/* ---------CONTACT------- */
 
 
 .contact{
@@ -1092,7 +1121,7 @@ body{
  
 }
 
-@media (width < 800px){
+@media (width < 900px){
     .contact h2{
         font-size: 50px;
     }
@@ -1105,5 +1134,8 @@ body{
     }
     .contact-list a {
         margin-left: 0;
+    }
+    .contact {
+        margin-top: 70px;
     }
 }

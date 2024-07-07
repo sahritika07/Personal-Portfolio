@@ -1,5 +1,5 @@
 var typed =new Typed (".text", {
-    strings: [" I'm a Frontend Developer " , "And a UI/UX Developer"],
+    strings: [" I'm a Frontend Developer " , "And a UI/UX Designer"],
     typeSpeed: 100,
     backSpeed: 50,
     backDelay: 1000,
@@ -15,3 +15,6 @@ function openmenu(){
 function closemenu(){
     sidemenu.style.right="-180px"
 }
+
+
+
